@@ -1,0 +1,105 @@
+body{
+background: black;
+font-family:Dancing Script ;
+font-size: 1.4em;
+}
+/*Cabecera*/
+.contenedor{
+  background-color: #5b7989;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px 10px 10px 10px;
+  box-sizing: border-box;
+
+}
+header,h1,ul,li{
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+header>h1{
+  text-shadow: 2px 2px 2px #02010a;
+  margin-left: 15px;
+}
+.menu{
+  margin-left: 30px;
+}
+.menu li{
+  padding: 10px;
+}
+.menu a{
+  font-size: 1em;
+  color: white;
+}
+#retrato{
+  text-decoration: none;
+}
+/*Secciones de imagenes*/
+section{
+  background-color: #d5c78f;
+}
+section img{
+  box-shadow: 2px 2px 2px #02010a;
+  margin: 15px;
+}
+
+.conPaisajes{
+  padding: 20px;
+}
+#uno{
+  -webkit-filter: blur(10px);
+}
+#dos,#cuatro,#seis{
+  -webkit-filter: grayscale(100%);
+}
+#tres{
+  -webkit-filter: sepia(90%);
+}
+/*Pie de pagina*/
+footer{
+  font-size: 1em;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px ;
+}
+footer h3{
+  color: black;
+}
+footer div{
+  width:200px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 17px;
+}
+.lista{
+  margin-top: 0;
+  text-align: left;
+}
+.lista li , a{
+  color:rgb(0, 0, 0);
+  font-size: 17px;
+
+}
+/*Media queries*/
+@media screen and (max-width:900px){
+  header,h1{
+    text-align: center;
+  }
+  footer{
+    text-align: left;
+  }
+  .conPaisajes{
+    width: 100%
+  }
+  section img{
+    width: 85%;
+  }
+  .menu{
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+}
